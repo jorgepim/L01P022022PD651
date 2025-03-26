@@ -19,7 +19,6 @@ namespace L01P022022PD651.Models
         public int UnidadesValorativas { get; set; }
 
         [Required]
-        [Range(0, 1, ErrorMessage = "El estado solo puede ser 0 (inactivo) o 1 (activo)")]
         [Column("estado")]
         public char Estado { get; set; }
     }
